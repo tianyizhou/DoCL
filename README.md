@@ -11,7 +11,7 @@
 <pre>
 @inproceedings{
     zhou2020docl,
-    title={Curriculum Learning by Dynamic Instance Hardness},
+    title={Curriculum Learning by Optimizing Learning Dynamics},
     author={Tianyi Zhou and Shengjie Wang and Jeff A. Bilmes},
     booktitle={Proceedings of The 24th International Conference on Artificial Intelligence and Statistics (AISTATS)},
     year={2021},
