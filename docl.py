@@ -18,7 +18,6 @@ from numpy.testing import assert_array_almost_equal
 from PIL import Image, ImageEnhance, ImageOps
 from progress.bar import Bar as Bar
 from sklearn.metrics import pairwise_distances
-# from utils import CIFAR10PolicyAll, RandAugment
 
 import torch
 import torch.nn as nn
@@ -29,11 +28,6 @@ import torch.utils.data as data
 import torch.utils.data.sampler as sampler
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
-
-import models.cifar as models
-model_names = sorted(name for name in models.__dict__
-    if not name.startswith("__")
-    and callable(models.__dict__[name]))
 
 parser = argparse.ArgumentParser(description='Curriculum Learning by Optimizing Learning Dynamics (DoCL)')
 parser.add_argument('-d', '--dataset', type=str, default='CIFAR10')
